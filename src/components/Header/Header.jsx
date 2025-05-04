@@ -45,15 +45,17 @@ function Header({ onCartClick }) {
 
       <div className={styles.linkDiv}>
         <nav>
-          {routes.map(route => (
-            <NavLink
-              className={({ isActive }) => isActive ? styles.active : ""}
-              to={route.path}
-              key={route.path}
-            >
-              {route.name}
-            </NavLink>
-          ))}
+          {routes
+            .filter(route => route.name) // Միայն նրանք, որոնք ունեն name
+            .map(route => (
+              <NavLink
+                className={({ isActive }) => isActive ? styles.active : ""}
+                to={route.path}
+                key={route.path}
+              >
+                {route.name}
+              </NavLink>
+            ))}
         </nav>
       </div>
 

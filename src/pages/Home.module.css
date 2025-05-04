@@ -8,7 +8,7 @@
 .products {
     display: grid;
     gap: 50px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto !important;
     padding: 10px;
 }
 
@@ -44,4 +44,225 @@
         grid-template-columns: auto auto;
         margin: 0 auto;
     }
+}
+
+.loaderWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loaderWrapper p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+@media (max-width: 480px) {
+    .spinner {
+        width: 40px;
+        height: 40px;
+        border-width: 5px;
+    }
+
+    .loaderWrapper p {
+        font-size: 14px;
+    }
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    background: url('/images/hero-bg.jpg') center/cover no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #444;
+}
+
+.preview {
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.preview h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.categories {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.categoryCard {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.categoryCard:hover {
+    transform: scale(1.03);
+}
+
+.categoryCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.categoryCard span {
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    background: url('/images/hero-bg.jpg') center/cover no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.preview {
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.preview h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.products {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.productCard {
+    text-decoration: none;
+    color: black;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    padding: 1rem;
+    text-align: center;
+}
+
+.productCard:hover {
+    transform: scale(1.03);
+}
+
+.productCard img {
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.productCard h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.productCard p {
+    font-weight: bold;
+    color: #222;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination button.activePage {
+    background-color: #000;
+    color: white;
+}
+
+.pagination button:focus {
+    outline: none;
 }
