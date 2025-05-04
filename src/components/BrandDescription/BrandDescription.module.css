@@ -1,0 +1,252 @@
+.BrendBox {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    max-height: 570px;
+    background-color: #DADADA;
+    padding: 0;
+}
+
+.BrendImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1.5;
+}
+
+.BrendImg img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.BrendText {
+    display: block;
+    flex: 1;
+    height: 100%;
+}
+
+.BrendText h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.BrendText h2 {
+    font-family: "Volkhov", sans-serif;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.BrendText a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+}
+
+.BrendText p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #767676;
+}
+
+.priceBox {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.priceBox p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-right: 10px;
+}
+
+.textMain {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-right: 10px;
+    padding-right: 150px;
+}
+
+.priceBox button {
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background-color: black;
+    color: #FFF;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.BrendText h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.priceBtn {
+    border: none;
+    background-color: black;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 15px 80px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1400px) {
+    .BrendBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 100%;
+        height: 100%;
+        background-color: #DADADA;
+    }
+
+    .BrendImg img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .BrendText {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .BrendText p {
+        display: none;
+    }
+
+    .BrendText h2 {
+        font-family: "Volkhov", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin: 0 10px;
+    }
+
+    .priceBox button {
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        background-color: black;
+        color: #FFF;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .priceBtn {
+        border: none;
+        background-color: black;
+        color: #FFF;
+        border-radius: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 10px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .BrendBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        height: 100%;
+        background-color: #DADADA;
+        padding: 0;
+    }
+
+    .BrendImg img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .BrendText {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+    }
+
+    .BrendText p {
+        display: none;
+    }
+
+    .BrendText h2 {
+        font-family: "Volkhov", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin: 0 10px;
+    }
+
+    .priceBox button {
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        background-color: black;
+        color: #FFF;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .priceBtn {
+        border: none;
+        background-color: black;
+        color: #FFF;
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 10px;
+    }
+}

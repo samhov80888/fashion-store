@@ -1,0 +1,28 @@
+.pricesBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricesBox button {
+    border: none;
+    text-align: start;
+    background-color: #FFF;
+    margin: 5px 0;
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    color: "#8A8A8A" !important;
+}
+
+h4 {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.active {
+    color: red;
+}

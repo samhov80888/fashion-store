@@ -1,0 +1,40 @@
+.buttonsBox {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.buttonsBoxId {
+    display: flex;
+}
+
+.buttonsBoxId button {
+    margin: 5px;
+}
+
+h4 {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.colorsTitle {
+    margin: 10px 0;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1400px) {
+    .buttonsBox {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto auto auto;
+    }
+}

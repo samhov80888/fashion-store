@@ -1,0 +1,41 @@
+.addCartBox {
+    display: block;
+}
+
+.btnBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    color: #000000;
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0%;
+    cursor: pointer;
+}
+
+.countBox {
+    display: flex;
+    align-items: center;
+}
+
+.countBox input {
+    border: 0px solid;
+    width: 20%;
+    text-align: center;
+}
+
+.countBox button {
+    border: none;
+    background-color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+}

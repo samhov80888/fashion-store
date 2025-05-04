@@ -1,0 +1,208 @@
+.mainBox {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.imgBox {
+    max-width: 500px;
+    max-height: 655px;
+    flex: 1;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.descriptionBox {
+    flex: 1;
+    padding: 0 50px;
+}
+
+.descriptionBox p {
+    font-family: "Volkhov", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #484848;
+    margin: 0;
+}
+
+.descriptionBox h2 {
+    font-family: "Volkhov", serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.reatingBox {
+    display: flex;
+    align-items: center;
+}
+
+.reatingBox span {
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.titleBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.starBox {
+    display: flex;
+    align-items: center;
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.starBox img {
+    object-fit: contain;
+    padding: 9px 11px;
+}
+
+.pricesBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pricesBox h3 {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: #484848;
+}
+
+.pricesBox p {
+    padding: 0 10px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #666666;
+    text-decoration: underline;
+    text-decoration-color: gray;
+    text-decoration-line: line-through;
+}
+
+.pricesBox span {
+    background-color: #DA3F3F;
+    padding: 3px 10px;
+    border-radius: 11px;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.ayesBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.ayesBox p {
+    padding: 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.timerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #F8CCCC;
+    background-color: #FDEFEE;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.timerBox p {
+    color: #FF706B;
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+
+.stockBox {
+    display: block;
+    margin: 20px 0;
+}
+
+.starBox p {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    color: #666666;
+}
+
+.linerBox {
+    position: relative;
+    top: 20px;
+    width: 100%;
+}
+
+.linerBox {
+    width: 100%;
+}
+
+.lineOne {
+    width: 100%;
+    border: 3px solid #DEDEDE;
+    border-radius: 2px;
+    z-index: -1;
+    margin: 0;
+}
+
+.sizeBox {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+    .mainBox {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        padding: 50px 0;
+    }
+
+    .imgBox {
+        max-width: 400px;
+        max-height: 500px;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainBox {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .imgBox {
+        max-width: 300px;
+        max-height: 400px;
+        flex: 1;
+    }
+}

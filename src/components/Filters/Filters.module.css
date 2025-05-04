@@ -1,0 +1,7 @@
+@media screen and (max-width: 1400px) {
+    .filtersBox {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 auto;
+    }
+}

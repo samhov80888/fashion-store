@@ -1,0 +1,242 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 600px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    overflow: scroll;
+}
+
+.show {
+    right: 0;
+}
+
+.cart {
+    padding: 10px 20px;
+}
+
+.closeButton {
+    background: transparent;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h2 {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.priceDescription p {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    margin: 0;
+    text-align: start;
+    color: #8A8A8A;
+}
+
+.priceDescription span {
+    font-weight: bold;
+    color: #000000;
+}
+
+.productDetailBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-bottom: 1px solid #00000063;
+    padding: 20px 0;
+}
+
+.productDetailBox img {
+    max-width: 160px;
+    max-height: 220px;
+    margin-right: 10px;
+}
+
+.productDetailBox div h4 {
+    margin: 0;
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.productDetailBox div p {
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 42px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #8A8A8A;
+}
+
+.productDetailBox div h5 {
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 42px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.countBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+    text-align: center;
+    width: 40%;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.countBox h4 {
+    padding: 0 20px;
+}
+
+.countBox span {
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkboxBox {
+    display: flex;
+    align-items: center;
+}
+
+.checkboxBox p {
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #8A8A8A;
+}
+
+.checkboxBox span {
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+input[type='checkbox'] {
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+input[type='checkbox']:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    background-color: inherit;
+    outline: 1px rgba(255, 255, 255, 0.2) solid;
+    transform: translate(-50%, -50%);
+}
+
+input[type='checkbox']:checked:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    background-color: inherit;
+    outline: 1px rgba(255, 255, 255, 0.2) solid;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 4px 1px #fff;
+}
+
+input[type='checkbox']:checked:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 18px;
+    border: solid;
+    border-width: 0 7px 7px 0;
+    border-color: inherit;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(40deg);
+}
+
+.removeBtn {
+    background-color: transparent;
+    color: red;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .overlay {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        overflow: scroll;
+    }
+}

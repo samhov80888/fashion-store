@@ -1,0 +1,33 @@
+.fashion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.fashion h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Volkhov", serif;
+    margin: 10px 0;
+}
+
+.linkBox {
+    display: block;
+}
+
+.linkBox nav img {
+    margin: 0 10px;
+}
+
+.linkBox nav a {
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22.5px;
+    color: #000;
+}

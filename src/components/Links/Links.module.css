@@ -1,0 +1,122 @@
+.LinksBox {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.imgBox {
+    display: flex;
+    margin: 10px 0;
+}
+
+.imgBox div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unicueBox {
+    margin: 0 50px;
+}
+
+.imgBox div p {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    color: #000000;
+    padding-left: 5px;
+}
+
+.deleveryBox {
+    display: block;
+}
+
+.deleveryBox div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.deleveryBox div h5 {
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin: 0 5px;
+
+}
+
+.deleveryBox div p {
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.visaBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.GuaranteeBox {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.GuaranteeBox h2 {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 25px 0 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .imgBox {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    .deleveryBox div img {
+        margin: 10px 0;
+    }
+
+    .deleveryBox div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imgBox {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .deleveryBox div img {
+        margin: 10px 0;
+    }
+
+    .deleveryBox div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+}

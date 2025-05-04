@@ -1,0 +1,182 @@
+.dealBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.timerBox {
+    width: 50%;
+    display: block;
+    text-align: start;
+    align-items: start;
+    flex: 1;
+}
+
+.timerBox div {
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.timerBox h1 {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.timerBox p {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    color: #8a8a8a;
+    margin-bottom: 50px;
+}
+
+.timerBox button {
+    border: none;
+    background-color: black;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 15px 80px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.timerBox h3 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #484848;
+}
+
+.sliderBox {
+    width: 50%;
+    flex: 1;
+}
+
+@media screen and (max-width: 1400px) {
+    .dealBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        background-color: #FAFAFA;
+        margin: 0 auto;
+    }
+
+    .timerBox {
+        width: 100%;
+        display: block;
+        text-align: start;
+        align-items: start;
+        flex: 1;
+    }
+
+    .timerBox div {
+        width: 100%;
+        margin: 0;
+    }
+
+    .timerBox h3 {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #484848;
+    }
+
+    .timerBox p {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0%;
+        color: #8a8a8a;
+        margin-bottom: 50px;
+    }
+
+    .timerBox h1 {
+        font-family: "Volkhov", serif;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .sliderBox {
+        width: 100%;
+        margin: 20px 0;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .dealBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color: #FAFAFA;
+        margin: 0 auto;
+    }
+
+    .timerBox {
+        width: 100%;
+        display: block;
+        text-align: start;
+        align-items: start;
+        flex: 1;
+    }
+
+    .timerBox div {
+        width: 100%;
+        margin: 0;
+    }
+
+    .timerBox h3 {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #484848;
+    }
+
+    .timerBox p {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0%;
+        color: #8a8a8a;
+        margin-bottom: 50px;
+    }
+
+    .timerBox h1 {
+        font-family: "Volkhov", serif;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .sliderBox {
+        width: 100%;
+        margin: 50px 0;
+        flex: 1;
+    }
+}

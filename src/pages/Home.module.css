@@ -1,0 +1,47 @@
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.productPosition {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.productStyle {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 25px 0;
+}
+
+.productStyle img {
+    cursor: pointer;
+    margin: 0 5px;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 1400px) {
+    .main {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 auto;
+    }
+}
